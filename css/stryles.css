@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+  /*Primary*/
+  --Orange: hsl(25, 97%, 53%);
+  /*Neutral*/
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*contenedor de todo los componentes*/
+.contenedor{
+  background-color: hsla(213, 20%, 18%, 0.6);
+  display: inline-block;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 384px;
+  margin: 0 10px;
+}
+
+/* contenedor estrella */
+.estrella{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.titulo{
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/*parrafo (pleace let etc)*/
+.subtitulo{
+  font-size: 15px;
+  color: var(--Medium-Grey);
+}
+
+/*lista ordenada ol*/
+.ol{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 30px 0;
+}
+
+/*listas*/
+li{
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Light-Grey);
+}
+
+/*contenedor boton*/
+.boton{
+  width: 100%;
+  background-color: var(--Orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+/*enlace*/
+.boton a{
+  text-decoration: none;
+  color: var(--White);
+  padding: 14px 0;
+  letter-spacing: 2px;
+}
+
+/*cisculos de gris*/
+.btn:focus{
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+
+/*cisculos de naranja*/
+li:hover{
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+/*hover boton*/
+.boton:hover{
+  background-color: var(--White);
+}
+
+.boton:hover > a{
+  color: var(--Orange)
+}
